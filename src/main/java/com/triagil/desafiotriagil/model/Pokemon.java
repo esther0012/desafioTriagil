@@ -20,9 +20,9 @@ public class Pokemon {
     private String name;
 
     @Column(name = "WEIGHT")
-    private String weight;
+    private Integer weight;
 
     @Column(name = "HEIGHT")
-    private String height;
+    private Integer height;
 
 }

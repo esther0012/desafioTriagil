@@ -11,18 +11,18 @@ import lombok.Setter;
 public class Pokemon {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
-    @SequenceGenerator(name = "SQ_POKEMON", sequenceName = "SQ_POKEMON", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_POKEMON")
     private Long id;
 
     @Column(name = "NOME")
     private String name;
 
     @Column(name = "WEIGHT")
-    private Integer weight;
+    private String weight;
 
     @Column(name = "HEIGHT")
-    private Integer height;
+    private String height;
 
+    // Getters e setters
 }

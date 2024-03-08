@@ -24,4 +24,5 @@ public class Team {
     @JoinColumn(name = "TEAM_ID")
     private List<Pokemon> pokemons;
 
+    // Getters e setters
 }

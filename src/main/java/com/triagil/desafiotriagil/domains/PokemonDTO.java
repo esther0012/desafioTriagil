@@ -1,11 +1,17 @@
 package com.triagil.desafiotriagil.domains;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Data
+@Getter
+@Setter
 public class PokemonDTO {
 
-    private Long id;
-    private String name;
-    private Integer weight;
-    private Integer height;
+    private int id;
+    private int height;
+    private int weight;
 
 
 }

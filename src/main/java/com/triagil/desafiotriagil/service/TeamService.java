@@ -25,4 +25,7 @@ public class TeamService {
         return teamRepository.findById(id).orElse(null);
     }
 
+    public void createTeam(Team team) {
+        teamRepository.save(team);
+    }
 }

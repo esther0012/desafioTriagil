@@ -35,4 +35,13 @@ public class TeamController {
         }
     }
 
+    @PostMapping
+    public ResponseEntity<?> createTeam(@RequestBody Team team) {
+        try {
+            teamService.createTeam(team);
+            return new ResponseEntity<>(HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
 }
